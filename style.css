@@ -5,7 +5,7 @@ body{
 }
 header{
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -24,6 +24,7 @@ h2{
 .imagem{
     text-align: center;
     margin-top: 10px;
+    background-color: rgb(255, 255, 255);
 
 }
 img{
