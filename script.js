@@ -1,3 +1,4 @@
 function validarFormulario(){
-    alert ("Dados enviados, enbreveentraremos en contato ")
+    alert ("Dados enviados, em breve entraremos em contato!")
 }
+
