@@ -21,6 +21,7 @@
   <div class="container">
     <header>
       <h1>CARTÃO DIGITAL</h1>
+      <hr >
     </header>
 
     <section class="imagem">
@@ -39,23 +40,34 @@
     </section>
 
     <section class="formulario">
-      <h2>abra sua conta e ganhe!</h2>
+      <h2>Abra sua conta e ganhe!</h2>
 
-      <form action=" ">
-        <input type="text" name="nome"  placeholder=" Digite seu nome">
-        <input type="email" name="email"  placeholder=" Digite seu email">
-        <button type="button" class="btn btn-primary" onclick="validarFormario()">criar conta </button>
-        <!--pegue do brootrasp o link do botão ja pronto e colei <button type="button" class="btn btn-primary"   </button> -->
+      <!--<form action="">  -->
+      <form id="form" class="form" action="">
 
+        <input type="text" name="nome" id="username" required placeholder="nome" >
+        <!--<span class="error"></span>  -->
+        <!--<input type="reset" name="reset" valeu="reset">  -->
 
+        <input type="email" name="email"  id="email" required placeholder="email"  >
+        <!--<span class="error"></span>  -->
+
+       <!-- <label for="Mensagem">Mensagem</label>
+        <textarea name=" Mensagem" required></textarea>
+        <input type="hidden" name="_captcha" value="false">  -->
+    
+        <button type="button" class="btn btn-primary" onclick="validarFormario()">Conta  Premium</button>
+        <!--pegue do brootrasp o link do botão ja pronto e colei <button type="button" class="btn btn-primary"     </button> -->
+
+           <!--<label for="Mensagem">Mensagem</label>
+       <textarea name="Mensagem" id="Mensagem" required></textarea>   -->
+ 
       </form>
     </section>
 
     <footer>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vel excepturi magni asperiores alias ut.</p>
     </footer>
-
-
   </div>
 
   <!--link do broostrap do JS peguei 3  tags de animação-->
@@ -69,6 +81,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
+    <!--link js externo-->
   <script src="./script.js"></script>
 
 </body>
