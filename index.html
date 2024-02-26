@@ -41,21 +41,32 @@
 
     <section class="formulario">
       <h2>Abra sua conta e ganhe!</h2>
-      <a href="https://www.baccredomatic.com/es-cr/personas/tarjetas/destacadas/gane-premios-clasica/american-express/clasica">premios!</a>
+      <a href="https://www.baccredomatic.com/es-cr/personas/tarjetas/destacadas/gane-premios-clasica/american-express/clasica" target="_blank">premios!</a>
 
       <!--<form action="">  -->
-      <form id="form" class="form" action="">  
+        <!--copie o codigo da pag https://www.staticforms.xyz/    /   https://formsubmit.co/-->
+      <form id="form" class="form" action="https://api.staticforms.xyz/submit" method="POST">  
 
-        <input type="text" name="nome" maxlength="14"  required placeholder="nome" >
+        <input type="text" name="nome" maxlength="14"  placeholder="Digita seu nome" autocomplete="off" required>
         
-        <input type="email" name="email"   required placeholder="email"  >
-    
-        <button type="button" class="btn btn-primary" onclick="validarFormulario()">Conta  Premium</button>
+        <input type="email" name="email"  placeholder="Digite seu email" autocomplete="given-name" required >
+
+    <!--botão do brootrap-->
+        <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Conta  Premium</button>
 
      <div>
-      <textarea name="mensagem" id="mensag" rows="2" required placeholder="Mensagem:"></textarea>
+      <textarea name="mensagem" id="mensag" rows="2"  placeholder="Mensagem:" ></textarea>
      </div>
      
+     <input type="hidden" name="accessKey" value= "c8c0f3dc-af50-4f6a-91b0-2822f4ee7f62">
+
+     <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+    
+    <!--copie o codigo da pag https://formsubmit.co/
+     <input type="hidden" name="_subject" value="Novo contato!"> congiuração para o subject no email troquei New submission por novo contato 
+     <input type="text" name="_honey" style="display: none"> evita  que os email como enviados vai no spam 
+     <input type="hidden" name="_captccha" value="false">     desabilita o captcha depois de enviar o form-->  
+
       </form>
     </section>
 
