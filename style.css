@@ -15,11 +15,11 @@
     background: linear-gradient(90deg, var(--blue), var(--pink));
     max-width: 1024px;
     /*largura da tela de meu computador*/
-    height: 95vh;
+    height: 100vh;
     margin: auto;
     margin-top: 10vh;
     border-radius: 10px;
-
+/*position: relative;*/
     /*animação*/
     animation: fadeIn 3s ease-out;
 }
@@ -42,6 +42,7 @@ body {
     background-color: rgb(30, 150, 150);
     overflow-wrap: break-word;
     text-shadow: 3px 5px 8px #333;
+    
 }
 
 header {
@@ -49,6 +50,7 @@ header {
     font-size: 30px;
     text-align: center;
     padding: 20px;
+    
 }
 
 h1 {
@@ -67,13 +69,21 @@ h2 {
     justify-content: space-evenly;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
+   
 }
 
 img {
-    width: 200px;
+    /*
+   
     margin-left: 100px;
     vertical-align: middle;
-    border-style: none;
+    border-style: none;*/
+    position: relative;
+    width: 250px;
+    transform: translate(180%);
+    
+ 
+   
 }
 
 section {
@@ -82,6 +92,7 @@ section {
     font-size: 20px;
     font-family: poppins, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 10px
+    
 }
 
 .descripcao {
